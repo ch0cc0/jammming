@@ -1,0 +1,8 @@
+.trackWrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(59, 59, 59);
+}

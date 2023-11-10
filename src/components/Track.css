@@ -1,0 +1,5 @@
+.track h3, .track p {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Adjust as needed */
+    /* Add any additional styling here */
+}

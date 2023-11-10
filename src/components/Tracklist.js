@@ -8,10 +8,10 @@ function Tracklist( { tracks, renderButton } ) {
         <div>
             {tracks.map(track => {
                 return (
-                    <React.Fragment key={track.id}>
+                    <div className="trackWrapper" key={track.id}>
                         <Track trackData={track}/>
                         {renderButton(track)}
-                    </React.Fragment>
+                    </div>
                 );
             })}
         </div>

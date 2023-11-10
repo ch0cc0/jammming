@@ -10,7 +10,7 @@ function SearchResults( { trackResults, onAddTrack } ) {
         <Tracklist 
             tracks={trackResults} 
             renderButton={(track) => (
-                <button onClick={() => onAddTrack(track)}>
+                <button className="trackButton" onClick={() => onAddTrack(track)}>
                 <FontAwesomeIcon icon={faPlus} />
                 </button>
             )}

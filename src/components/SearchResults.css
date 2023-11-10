@@ -1,0 +1,23 @@
+.trackButton {
+    /* Basic styling */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+  
+    /* Font styling */
+    font-size: 2.2em; /* Larger font size for better visibility */
+    color: white;
+  
+    /* Styling for inputs */
+    background-color: #242424;
+  
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    /* Hover effect for buttons */
+    &:hover {
+      background-color: #636363;
+    }
+  }

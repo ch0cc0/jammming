@@ -1,18 +1,75 @@
 .App {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+  grid-template-rows: auto; /* Rows adjust based on content */
+  gap: 20px;
+  padding: 20px; 
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  grid-column: 1 / -1;
+  font-size: 4em;
+  color: white; 
 }
 
-.App-link {
-  color: #61dafb;
+.musicIcon {
+  height: 1em;
+  margin-right: -0.3em;
+  margin-bottom: -0.1em;
+  filter: invert(100%);
+}
+
+.mmm {
+  font-size: 1.2em;
+  color: white; 
+}
+
+/* Styling for the search and playlist sections */
+
+.search {
+  grid-column: 1 / 4;
+}
+
+.playlist {
+  grid-column: 4 / -1;
+}
+
+.search, .playlist {
+  background-color: #141414; /* Dark grey background for grid items */
+  border-radius: 10px; /* Rounded borders */
+  color: white; 
+}
+
+.search input, .playlist input {
+  /* Basic styling */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+
+  /* Font styling */
+  font-size: 2.2em; /* Larger font size for better visibility */
+  color: white;
+
+  /* Styling for inputs */
+  background-color: #242424;
+  width: calc(100% - 35px);
+
+  /* Adjusting height for input elements */
+  height: 50px; /* You can adjust this as needed */
+}
+
+.search button, .playlist button {
+  /* Additional styling for buttons */
+  background-color: #303030; /* Dark grey, similar to grid items */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 50px; /* Matching the input height */
+
+  /* Hover effect for buttons */
+  &:hover {
+    background-color: #636363;
+  }
 }

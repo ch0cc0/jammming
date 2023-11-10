@@ -1,0 +1,45 @@
+.searchGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Creates 5 equal columns */
+    grid-template-rows: auto; /* Rows adjust based on content */
+    gap: 20px;
+    padding: 5px; 
+}
+
+.bar {
+    grid-column: 1 / 9;
+}
+
+.searchButton {
+    /* Basic styling */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    grid-column: 9 / -1;
+  
+    /* Font styling */
+    font-size: 2.2em; /* Larger font size for better visibility */
+    color: white;
+  
+    /* Styling for inputs */
+    background-color: #242424;
+    width: calc(100% - 35px);
+  
+    /* Adjusting height for input elements */
+    height: 50px; /* You can adjust this as needed */
+  }
+  
+  .saveButton {
+    /* Additional styling for buttons */
+    background-color: #303030; /* Dark grey, similar to grid items */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px; /* Matching the input height */
+  
+    /* Hover effect for buttons */
+    &:hover {
+      background-color: #636363;
+    }
+  }

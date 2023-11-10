@@ -17,10 +17,10 @@ function SearchBar({onSearch}) {
     }
 
     return (
-        <>
-            <input value={inputValue} onChange={handleInputChange} />
-            <button onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
-        </>
+        <div className='searchGrid'>
+            <input className='bar' value={inputValue} onChange={handleInputChange} />
+            <button className='searchButton' onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
+        </div>
     );
 }
 

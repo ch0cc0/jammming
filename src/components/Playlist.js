@@ -12,12 +12,12 @@ function Playlist({tracks, playlistName, onRemoveTrack, onSave, onUpdate }) {
             <Tracklist 
                 tracks={tracks} 
                 renderButton={(track) => (
-                    <button onClick={() => onRemoveTrack(track)}>
+                    <button className="trackButton" onClick={() => onRemoveTrack(track)}>
                     <FontAwesomeIcon icon={faMinus} />
                     </button>
                 )}
             />
-            <button onClick={onSave}>Save To Spotify</button>
+            <button className="saveButton" onClick={onSave}>Save To Spotify</button>
         </>
     );
 }

@@ -1,0 +1,54 @@
+.trackButton {
+  /* Basic styling */
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+
+  /* Font styling */
+  font-size: 2.2em; /* Larger font size for better visibility */
+  color: white;
+
+  /* Styling for inputs */
+  background-color: #242424;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* Hover effect for buttons */
+  &:hover {
+    background-color: #636363;
+  }
+}
+
+.saveButton {
+    /* Basic styling */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    
+    /* Font styling */
+    font-size: 2.2em; /* Larger font size for better visibility */
+    color: white;
+    
+    /* Styling for inputs */
+    background-color: #242424;
+    width: calc(100% - 35px);
+    
+    /* Adjusting height for input elements */
+    height: 50px; /* You can adjust this as needed */
+
+    /* Additional styling for buttons */
+    background-color: #303030; /* Dark grey, similar to grid items */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px; /* Matching the input height */
+    
+    /* Hover effect for buttons */
+    &:hover {
+        background-color: #636363;
+    }
+}

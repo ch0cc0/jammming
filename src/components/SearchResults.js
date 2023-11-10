@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './SearchResults.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import Tracklist from './Tracklist';
 
-function SearchResults() {
+function SearchResults( { trackResults, onAddTrack } ) {
 
     return (
-        <>
-
-        </>
+        <Tracklist 
+            tracks={trackResults} 
+            renderButton={(track) => (
+                <button onClick={() => onAddTrack(track)}>
+                <FontAwesomeIcon icon={faPlus} />
+                </button>
+            )}
+        />
     );
 }
 

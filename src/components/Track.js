@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './Track.css';
 
-function Track() {
+function Track( { trackData } ) {
 
     return (
         <>
-
+            <h3>{trackData.name}</h3>
+            <p>{trackData.artist} | {trackData.album}</p>
         </>
     );
 }

@@ -13,14 +13,13 @@ function App() {
 
   const search = (term) => {
     Spotify.search(term).then((searchResults) => {
-      
+
       const newTracks = searchResults.filter(searchTrack => 
         !myTracks.some(myTrack => myTrack.id === searchTrack.id)
       );
   
       // Only update the state if there are new tracks
       setSearchResults(newTracks);
-  
     });
   };
 
